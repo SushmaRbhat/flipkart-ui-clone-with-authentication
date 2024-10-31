@@ -1,0 +1,36 @@
+.filter-conatiner {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  .filter {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+    border-radius: 2px;
+    .filter-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 16px 10px;
+
+      .title {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      button {
+        border: none;
+        outline: none;
+        background: transparent;
+        color: var(--primary);
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+    .filter-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}

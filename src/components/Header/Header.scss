@@ -1,0 +1,169 @@
+.header {
+  width: 100%;
+  height: 60px;
+  padding: 12px 0px;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: fixed;
+  top: 0;
+  background-color: var(--primary);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    .link {
+      color: #fff;
+      font-size: 11px;
+      font-style: italic;
+      cursor: pointer;
+
+      span:nth-child(2) {
+        color: #ffe500;
+      }
+      img {
+        width: 10px;
+        margin-left: 2px;
+      }
+    }
+    .link:hover {
+      text-decoration: underline;
+      text-decoration-color: #fff;
+    }
+  }
+  .logo > img {
+    width: 75px;
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    height: 100%;
+    min-width: 304px;
+    width: calc(100% - 150px);
+    max-width: 570px;
+    border-radius: 2px;
+    padding: 0 10px 0 0;
+    border-radius: 2px;
+    overflow: hidden;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+    input {
+      border: none;
+      outline: none;
+      width: 100%;
+      height: 100%;
+      padding: 0 16px;
+    }
+    svg {
+      margin-left: 3px;
+      color: var(--primary);
+      font-size: 20px;
+    }
+  }
+  .nav-link {
+    margin: 0 8px;
+    height: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 768px) {
+      margin: 0;
+    }
+  }
+  .login-btn {
+    font-weight: 500;
+    background-color: #fff;
+    color: var(--primary);
+    cursor: pointer;
+    border-radius: 2px;
+    height: 32px;
+    padding: 5px 40px;
+    border: 1px solid #dbdbdb;
+  }
+  .account-btn {
+    font-weight: 500;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 32px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    span {
+      vertical-align: middle;
+      line-height: 1;
+    }
+  }
+  .seller span {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .more-btn {
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+    span {
+      vertical-align: middle;
+      line-height: 1;
+    }
+  }
+  .cart-btn {
+    display: inline-flex;
+    gap: 12px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    span {
+      font-weight: 500;
+    }
+  }
+}
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  line-height: 1;
+  font-size: 32px;
+  vertical-align: top;
+}
+.modal-container {
+  min-width: 500px;
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.amenuItem {
+  border-bottom: 1px solid lightgray;
+
+  svg {
+    color: var(--primary);
+    font-size: 14px;
+  }
+  span {
+    font-size: 14px;
+    margin-left: 8px;
+  }
+}
+@media (max-width: 1000px) {
+  .header {
+    font-size: 6.4vw;
+  }
+}

@@ -1,0 +1,30 @@
+.product-container {
+  background-color: #fff;
+  padding: 20px 15px;
+  border-radius: 2px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-left: 20px;
+}
+.sort-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  span {
+    font-weight: 500;
+  }
+  .active-sort-tab {
+    cursor: pointer;
+    border-bottom: 2px solid var(--primary);
+    padding: 8px 0 4px;
+    color: var(--primary);
+  }
+  .inactive-sort-tab {
+    cursor: pointer;
+  }
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
